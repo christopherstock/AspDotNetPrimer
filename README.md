@@ -1,7 +1,7 @@
 
 # C# & ASP .NET 101
 
-![ASP .NET](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_dotnet.png)
+![ASP .NET](https://github.com/christopherstock/AspDotNetPrimer/raw/master/_ASSET/readme/logo_aspdotnet.png)
 
 Dieser Workshop behandelt die wichtigsten Grundlagen von **Microsoft .NET Core** sowie der Programmiersprache **C#**.
  Mit Hilfe des DotNet CLI Befehls und des .NET-Paketmanagers **NuGet** erstellen wir einen **ASP .NET** Backendservice
@@ -31,7 +31,7 @@ Wechseln Sie in einen beliebigen Ordner und erstellen Sie mit dem folgenden `dot
 `dotnet new webapp -o AspDotNetPrimer`
 
 
-### 2. Vertrauen Sie dem Entwicklungszertifikat 
+### 2. Entwicklungszertifikat akzeptieren
 
 Damit der **ASP .NET** Backend-Service korrekt auf dem lokalen Rechner erreicht werden kann, muss mit dem folgenden 
  Befehl dem hiermit verbundenen HTTPS-Entwicklungszertifikat vertraut werden:
@@ -51,6 +51,23 @@ Die ASP .NET Serveranwendung ist erreichbar unter:
 `https://localhost:5001`
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Development
 
 Die folgenden Aufgaben können im Rahmen eines Coding Dojos oder im Workshopformat durchgeführt werden:
@@ -66,27 +83,11 @@ Die folgenden Aufgaben können im Rahmen eines Coding Dojos oder im Workshopform
 
 
 
- 
 
 
+### 4. Projektstruktur
 
-Erstellen Sie einen neuen Ordner mit einem beliebigen Namen für das Projekt. Wechseln Sie in diesen Ordner und
- initialisieren Sie ein neues Gradle-Projekt mit dem folgenden Befehl:
-
-
-Bitte beantworten Sie die Rückfragen der Konsole wie folgt:
-
-- Select type of project to generate: `2: application`
-- Select implementation language: `3. Java`
-- Select build script DSL: `1. Groovy`
-- Select test framework: `1. JUnit 4`
-- Project name: `DotNetPrimer`
-- Source package: `de.mayflower.DotNetPrimer`
-
-
-### 2. Projektstruktur
-
-### 2.1. Hauptklasse
+### 4.1. Hauptklasse
 
 Die Hauptklasse und deren statische **main**-Methode stellt den Einstieg in unsere Anwendung dar. Die Hauptklasse wurde
  von Gradle erstellt unter:
@@ -101,7 +102,7 @@ Es empfiehlt sich, diesen Pfad in der IDE Ihrer Wahl explizit als **Sources Root
 
 ![NUnit](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_nunit.png)
 
-### 2.2. Tests
+### 4.2. Tests
 
 Ein Beispiel JUnit-Test wurde von Gradle bereits erstellt unter:
 
@@ -112,6 +113,11 @@ Alle JUnit-Tests siedeln an unter:
 `src/test/java`
 
 Es empfiehlt sich, diesen Pfad in der IDE Ihrer Wahl explizit als **Test Resources Root** zu definieren.
+
+
+
+
+
 
 
 ### 3. Kompilieren und starten der Anwendung und der Tests
