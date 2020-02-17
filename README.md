@@ -97,7 +97,17 @@ Die folgenden Aufgaben können im Rahmen eines Coding Dojos oder im Workshopform
 
 ![NuGet](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_nuget.png)
 
-1. Installieren Sie die aktuellste Version des Pakets **Extended.Wpf.Toolkit** aus der **NuGet Gallery**.
+1. Ändern Sie den Begrüßungstext auf der Startseite.
+2. Erstellen Sie neben den vorgegebenen Seiten "Home" und "Privacy" eine weitere Seite "Contact".
+
+
+
+
+### Obsolete:
+
+1. Installieren Sie die aktuellste Version des Pakets **HTTP??** aus der **NuGet Gallery**.
+
+
 2. Instanziieren Sie die neue Klasse `AppFrame` in der `main`-Methode und rufen Sie deren nicht-statischer Methode
  `show()` auf.
 3. Erstellen und Konfektionieren Sie eine Instanz von `JFrame` im Konstruktor der Klasse `AppFrame` und fügen Sie dem
