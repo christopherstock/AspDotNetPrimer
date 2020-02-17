@@ -1,20 +1,21 @@
 
-# .NET 101
+# C# & ASP .NET 101
 
-![.NET](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_dotnet.png)
+![ASP .NET](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_dotnet.png)
 
-Dieser Workshop behandelt die wichtigsten Grundlagen des Microsoft .NET-Frameworks sowie der Programmiersprache C#. Mit Hilfe des DotNet CLI Befehls
- und des .NET-Paketmanagers **NuGet** erstellen wir ein .NET-Projekt von Grund auf. Entwickelt wird eine kleine UI-Anwendung, mit der
- auf Knopfdruck ein Witz aus der **International Chuck Norris Database** angefordert und in unserer Anwendung
- angezeigt wird. Für das Handling der HTTP-Request- u. -Responses soll eine moderne Bibliothek aus der **NuGet Gallery** verwendet werden.
+Dieser Workshop behandelt die wichtigsten Grundlagen von **Microsoft .NET Core** sowie der Programmiersprache **C#**.
+ Mit Hilfe des DotNet CLI Befehls und des .NET-Paketmanagers **NuGet** erstellen wir einen **ASP .NET** Backendservice
+ von Grund auf. Entwickelt wird eine Serverapplikation, mit der auf Knopfdruck ein Witz aus der **International Chuck
+ Norris Database** angefordert und in unserer Anwendung angezeigt wird. Für das Handling der HTTP-Request- u. -Responses
+ zur externen Chuck Norris Datenbank soll eine moderne HTTP-Bibliothek aus der **NuGet Gallery** verwendet werden.
 
 <hr>
 
 ## Tech Stack
 
-- .NET Core 3.1
+- .NET Core 3.1 SDK
 - NUnit 3.12.0
-- System.Net.Http 4.3.4
+- System.Net.Http 4.3.4 **(??)**
 
 <hr>
 
@@ -22,10 +23,56 @@ Dieser Workshop behandelt die wichtigsten Grundlagen des Microsoft .NET-Framewor
 
 ### 1. DotNet-Projekt anlegen
 
+Nach der Installation des **.NET Core SDKs** können Sie auf der Konsole den Befehl `dotnet` ausführen.
+
+Wechseln Sie in einen beliebigen Ordner und erstellen Sie mit dem folgenden `dotnet` Kommando einen neuen Ordner
+ mit dem Namen `AspDotNetPrimer` der das Grundgerüst einer **ASP .NET** Anwendung beinhaltet:
+ 
+`dotnet new webapp -o AspDotNetPrimer`
+
+
+### 2. Vertrauen Sie dem Entwicklungszertifikat 
+
+Damit der **ASP .NET** Backend-Service korrekt auf dem lokalen Rechner erreicht werden kann, muss mit dem folgenden 
+ Befehl dem hiermit verbundenen HTTPS-Entwicklungszertifikat vertraut werden:
+
+`dotnet dev-certs https --trust`
+
+
+### 3. Bauen und Starten der Anwendung
+
+Mit dem folgenden Befehl starten Sie den ASP .NET Server. Die Option `watch` bewirkt, dass das Projekt bei Veränderungen
+ am Projektcode neu gebaut wird:
+
+`dotnet watch run`
+
+Die ASP .NET Serveranwendung ist erreichbar unter:
+
+`https://localhost:5001`
+
+
+## Development
+
+Die folgenden Aufgaben können im Rahmen eines Coding Dojos oder im Workshopformat durchgeführt werden:
+
+1. Ändern Sie den Begrüßungstext auf der Startseite.
+2. Erstellen Sie neben den vorgegebenen Seiten **Home** und **Privacy** eine weitere Seite **Joke**.
+
+
+
+
+![NuGet](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_nuget.png)
+
+
+
+
+ 
+
+
+
 Erstellen Sie einen neuen Ordner mit einem beliebigen Namen für das Projekt. Wechseln Sie in diesen Ordner und
  initialisieren Sie ein neues Gradle-Projekt mit dem folgenden Befehl:
 
-`gradle init`
 
 Bitte beantworten Sie die Rückfragen der Konsole wie folgt:
 
@@ -91,14 +138,6 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
 
 ![The International Chuck Norris Database](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/chuck.jpg)
 
-## Development
-
-Die folgenden Aufgaben können im Rahmen eines Coding Dojos oder im Workshopformat durchgeführt werden:
-
-![NuGet](https://github.com/christopherstock/DotNetPrimer/raw/master/_ASSET/readme/logo_nuget.png)
-
-1. Ändern Sie den Begrüßungstext auf der Startseite.
-2. Erstellen Sie neben den vorgegebenen Seiten "Home" und "Privacy" eine weitere Seite "Contact".
 
 
 
