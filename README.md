@@ -1,13 +1,14 @@
 
-# C# & ASP .NET 101
+# C# ASP .NET 101
 
 ![ASP .NET](https://github.com/christopherstock/AspDotNetPrimer/raw/master/_ASSET/readme/logo_aspdotnet.png)
 
-Dieser Workshop behandelt die wichtigsten Grundlagen von **Microsoft .NET Core** sowie der Programmiersprache **C#**.
- Mit Hilfe des DotNet CLI Befehls und des .NET-Paketmanagers **NuGet** erstellen wir einen **ASP .NET** Backendservice
- von Grund auf. Entwickelt wird eine Serverapplikation, mit der auf Knopfdruck ein Witz aus der **International Chuck
- Norris Database** angefordert und in unserer Anwendung angezeigt wird. Für das Handling der HTTP-Request- u. -Responses
- zur externen Chuck Norris Datenbank soll eine moderne HTTP-Bibliothek aus der **NuGet Gallery** verwendet werden.
+Dieser Workshop behandelt die wichtigsten Grundlagen der Programmiersprache **C#** sowie des Frameworks **Microsoft .NET
+ Core**. Mit Hilfe des **DotNet CLI Befehls** und des .NET-Paketmanagers **NuGet** erstellen wir einen **ASP .NET**
+ Backendservice von Grund auf. Entwickelt wird eine Serverapplikation, mit der auf Knopfdruck ein Witz aus der
+ **International Chuck Norris Database** angefordert und in unserer Anwendung angezeigt wird. Für das Handling der
+ HTTP-Request- u. -Responses zur externen Chuck Norris Datenbank soll eine moderne HTTP-Bibliothek aus der **NuGet
+ Gallery** verwendet werden.
 
 <hr>
 
