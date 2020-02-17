@@ -4,11 +4,11 @@ using Microsoft.Extensions.Logging;
 
 namespace AspDotNetPrimer.Pages
 {
-    public class PrivacyModel : PageModel
+    public class TestPageModel : PageModel
     {
         private readonly ILogger<PrivacyModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public TestPageModel( ILogger<PrivacyModel> logger )
         {
             _logger = logger;
         }
