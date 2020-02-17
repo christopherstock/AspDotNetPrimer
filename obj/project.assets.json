@@ -20,7 +20,7 @@
       "outputPath": "/Users/stock/workspaces/DotNet/AspDotNetPrimer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/stock/.config/NuGet/NuGet.Config"
+        "/Users/stock/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
