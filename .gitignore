@@ -1,0 +1,12 @@
+
+#macOS
+.DS_Store
+
+# JetBrains Rider
+.idea
+
+# DotNet build output
+bin
+
+# DotNet debug objects
+obj/Debug/
