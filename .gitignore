@@ -9,4 +9,4 @@
 bin
 
 # DotNet debug objects
-obj/Debug/
+obj
